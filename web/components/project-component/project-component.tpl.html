@@ -1,0 +1,9 @@
+<div>
+   <h4>{{name}}</h4>
+   <div v-for="idx in numRows">
+      <select>
+         <option>--- Select ---</option>
+         <option v-for="member in teamMembers">{{member.name}}</option>
+      </select>
+   </div>
+</div>

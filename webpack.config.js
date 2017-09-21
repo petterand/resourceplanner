@@ -2,17 +2,14 @@ const config = {
    entry: './web/index.js',
    output: {
       path: __dirname,
-      filename: 'web/bundle.js'
+      filename: 'web/out/bundle.js'
    },
    devtool: 'source-map',
    module: {
       loaders: [{
          test: /\.js$/,
          exclude: /node_modules/,
-         loader: 'babel-loader',
-         // query: {
-         //    presets: ['es2015']
-         // }
+         loader: 'babel-loader'
       }, {
          test: /\.html$/,
          loader: 'raw-loader'
